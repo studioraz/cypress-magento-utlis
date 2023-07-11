@@ -1,0 +1,78 @@
+{
+  "name": "@studioraz/cypress-magento-utlis",
+  "version": "1.0.0",
+  "description": "Cypress command utilities for testing Magento 2",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "docs": "typedoc --out docs src/**/*.ts",
+    "clean": "rm -rf ./lib/",
+    "coverage": "codecov",
+    "lint": "eslint ./src/ --fix",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "prettify": "prettier --write \"**/*.{ts,js}\"",
+    "typecheck": "tsc --noEmit",
+    "cypress:open": "cypress open --config-file tests/cypress/cypress-config.js --e2e --browser chrome",
+    "cypress:run": "cypress run --config-file tests/cypress/cypress-config.js",
+    "env": "wp-env",
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "postenv:start": "./tests/bin/initialize.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studioraz/cypress-magento-utlis"
+  },
+  "license": "MIT",
+  "author": "StudioRaz (https://github.com/studioraz)",
+  "engines": {
+    "node": ">=12.0"
+  },
+  "keywords": [
+    "magento",
+    "cypress",
+    "testing",
+    "e2e"
+  ],
+  "bugs": {
+    "url": "https://github.com/studioraz/cypress-magento-utlis/issues"
+  },
+  "homepage": "https://github.com/studioraz/cypress-magento-utlis",
+  "devDependencies": {
+    "@10up/cypress-wp-utils": "^0.1.0",
+    "@types/node": "^12.20.11",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "@wordpress/env": "^5.5.0",
+    "codecov": "^3.8.1",
+    "compare-versions": "^4.1.3",
+    "cypress": "^10.11.0",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "husky": "^6.0.0",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.2.1",
+    "ts-node": "^10.2.1",
+    "typedoc": "^0.22.12",
+    "typescript": "^4.2.4"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --cache-location .eslintcache --fix",
+    "*.{ts,js}": "prettier --write"
+  },
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  }
+}
