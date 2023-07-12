@@ -7,11 +7,7 @@ describe('Command: logout', () => {
 
     it('Logout should not fail if not logged in', () => {
         cy.logout();
-        cy.visit(`/`);
+        cy.visit(`https://magento-demo.mageplaza.com/`);
         cy.logout();
-    });
-
-    after(() => {
-        cy.login();
     });
 });

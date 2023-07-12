@@ -16,10 +16,10 @@
  * cy.login( 'customer', 'strongpassword')
  * ```
  */
-export const login = (username = 'admin', password = 'password'): void => {
-    cy.visit('/customer/account/login/');
+export const login = (username = 'roni_cost@example.com', password = 'roni_cost3@example.com'): void => {
+    cy.visit('https://magento-demo.mageplaza.com/index.php/customer/account/login/');
     cy.get('body').then($body => {
-        if ($body.find('.customer-account-login').length == 1) {
+        if ($body.find('.block-customer-login').length == 1) {
             cy.get('#email').clear().type(username);
             cy.get('#pass').clear().type(password);
             cy.get('#send2').click();
