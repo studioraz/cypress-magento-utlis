@@ -1,14 +1,15 @@
 import { defineConfig } from "cypress";
 
 module.exports = defineConfig({
-  fixturesFolder: 'tests/cypress/fixtures',
-  video: false,
+  fixturesFolder: 'cypress/fixtures',
   e2e: {
+    chromeWebSecurity : false,
+    baseUrl: 'https://magento-demo.mageplaza.com',
     setupNodeEvents(on, config) {
 
     },
-    specPattern: 'tests/cypress/e2e/*.test.*',
-    supportFile: "tests/cypress/support/commands.ts",
+    specPattern: 'cypress/e2e/*.test.*',
+    supportFile: "cypress/support/commands.ts",
   },
 });
 

@@ -18,10 +18,14 @@
 
     "types": ["node", "cypress"],
   },
-  "include": ["**/**/*.ts", "**/**/**/*.ts"],
+  "include": ["**/**/*.ts",
+    "**/*.ts",
+    "cypress/support/commands/customer/login.ts",
+    "cypress/support/commands/customer/logout.ts",
+    "cypress/support/commands/**/*.ts"],
 
   "files": [
-    "src/commands/customer/login.ts",
-    "src/commands/customer/logout.ts",
+    "./cypress/support/commands/customer/login.ts",
+    "./cypress/support/commands/customer/logout.ts"
   ]
 }

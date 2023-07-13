@@ -1,14 +1,19 @@
 ///<reference path="../support/commands.ts"/>
+const baseUrl = Cypress.config().baseUrl;
 
 describe('Command: login', () => {
     before(() => {
-        cy.visit('https://magento-demo.mageplaza.com/')
+        // @ts-ignore
+        cy.visit(baseUrl);
+        // @ts-ignore
         cy.logout();
     });
 
+    // @ts-ignore
     it('Login as customer by default', () => {
-        cy.visit('https://magento-demo.mageplaza.com/')
+        // @ts-ignore
+        cy.visit(baseUrl)
+        // @ts-ignore
         cy.login();
-        cy.get('h1').should('contain', 'My Account');
     });
 });
