@@ -10,9 +10,7 @@
     "postcode": "12345"
   },
   "us_california": {
-    "street": [
-      "1234 Main St"
-    ],
+    "street": "1234 Main St",
     "city": "Los Angeles",
     "region_id": "California",
     "country": "US",

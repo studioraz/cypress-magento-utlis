@@ -3,11 +3,14 @@
   "accountLogin": "/customer/account/login",
   "accountHome": "/customer/account",
   "addressNew": "/customer/address/new",
+  "addressList": "/customer/address/index",
   "address": "/customer/address",
   "accountEdit": "/customer/account/edit",
+  "accountEditChangePassword": "/customer/account/edit/changepass/1/",
   "accountOrderHistory": "/sales/order/history",
   "manageNewsletter": "/newsletter/manage",
   "accountLogoutSuccess" : "/customer/account/logoutSuccess",
   "accountLogout" : "/customer/account/logout",
-  "wishlist": "/wishlist"
+  "wishlist": "/wishlist",
+  "passwordReset": "/customer/account/forgotpassword"
 }

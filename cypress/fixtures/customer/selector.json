@@ -11,5 +11,29 @@
     "email" : "input[name='email']",
     "password" : "input[name='password']",
     "confirm_password" : "input[name='password_confirmation']"
+
+  },
+  "edit_account_form": {
+    "form" : "form#form-validate",
+    "first_name" : "input[name='firstname']",
+    "last_name" : "input[name='lastname']",
+    "current_password" : "input[name='current_password']",
+    "new_password" : "input[name='password']",
+    "confirm_new_password" : "input[name='password_confirmation']"
+  },
+  "add_new_address_form": {
+    "form" : "form#form-validate",
+    "company" : "input[name='company']",
+    "phone_number" : "input[name='telephone']",
+    "street_address" : "input#street_1",
+    "country" : "select[name='country_id']",
+    "region" : "select[name='region_id']",
+    "city" : "input[name='city']",
+    "postcode" : "input[name='postcode']"
+  },
+  "reset_password_form": {
+    "form" : "form#form-validate",
+    "email" : "input[name='email']",
+    "captcha" : "input[name='captcha[user_forgotpassword]']"
   }
 }
