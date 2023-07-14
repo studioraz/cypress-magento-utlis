@@ -1,0 +1,15 @@
+{
+  "login_account_form": {
+    "form" : "form#login-form",
+    "username": "input[name='login[username]']",
+    "password": "input[name='login[password]']"
+  },
+  "create_account_form": {
+    "form" : "form#form-validate",
+    "first_name" : "input[name='firstname']",
+    "last_name" : "input[name='lastname']",
+    "email" : "input[name='email']",
+    "password" : "input[name='password']",
+    "confirm_password" : "input[name='password_confirmation']"
+  }
+}

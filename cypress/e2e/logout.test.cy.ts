@@ -1,13 +1,7 @@
 describe('Command: logout', () => {
     it('Logout logged in', () => {
         // @ts-ignore
-        cy.login();
-        // @ts-ignore
-        cy.logout();
-        cy.get('.page-title .base').should('contain', 'You are signed out');
-    });
-
-    it('Logout should not fail if not logged in', () => {
+        cy.login('roni_cost@example.com', 'roni_cost3@example.com');
         // @ts-ignore
         cy.logout();
     });

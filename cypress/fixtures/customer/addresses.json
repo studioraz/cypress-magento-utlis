@@ -1,0 +1,22 @@
+{
+  "default": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "company": "Studio Raz",
+    "street": "HaBarzel 19",
+    "city": "Tel Aviv",
+    "country_id": "IL",
+    "telephone": "0541234567",
+    "postcode": "12345"
+  },
+  "us_california": {
+    "street": [
+      "1234 Main St"
+    ],
+    "city": "Los Angeles",
+    "region_id": "California",
+    "country": "US",
+    "phone": "555-555-1212",
+    "postcode": "91911-1300"
+  }
+}

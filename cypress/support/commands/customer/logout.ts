@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
+import customerRoute from '../../../fixtures/customer/route.json';
+
 
 // @ts-ignore
 Cypress.Commands.add('logout', () => {
-    cy.visit(`${baseUrl}/customer/account/logout/`);
-    cy.get('body').then($body => {
-        if ($body.find('.action .switch').length == 1) {
-            cy.get('.link .authorization-link a').click();
-        }
-    });
+    // logout from customer account
+    cy.visit(customerRoute.accountLogout);
+    // should redirect to log out success page
+    cy.url().should('include', customerRoute.accountLogoutSuccess);
 });

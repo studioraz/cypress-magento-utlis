@@ -1,15 +1,20 @@
 /// <reference types="cypress" />
 // @ts-ignore
-import customer from '../../../fixtures/customer/customer.json';
+import customers from '../../../fixtures/customer/customer.json';
+import customerRoute from '../../../fixtures/customer/route.json';
+import customerSelector from '../../../fixtures/customer/selector.json';
 // @ts-ignore
-Cypress.Commands.add('login', () => {
-    cy.visit(`${baseUrl}/customer/account/login/`);
-    cy.get('.block-customer-login').then($loginBlock => {
-        if ($loginBlock.length == 1) {
-            cy.get('#email').clear().type(customer.default.username);
-            cy.get('#pass').clear().type(customer.default.password);
-            cy.get('#send2').click();
-            cy.get('h1').should('contain', 'My Account');
-        }
+Cypress.Commands.add('login', (username, password) => {
+    // login to customer account
+    cy.visit(customerRoute.accountLogin);
+
+    // fill in the form
+    cy.get(customerSelector.login_account_form.form).within(() => {
+        cy.get(customerSelector.login_account_form.username).type(username);
+        cy.get(customerSelector.login_account_form.password).type(password);
+    }).submit().then(() => {
+
+        // should redirect to account home page
+        cy.url().should('include', customerRoute.accountHome)
     });
 })

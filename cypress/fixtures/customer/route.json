@@ -1,0 +1,13 @@
+{
+  "accountCreate": "/customer/account/create",
+  "accountLogin": "/customer/account/login",
+  "accountHome": "/customer/account",
+  "addressNew": "/customer/address/new",
+  "address": "/customer/address",
+  "accountEdit": "/customer/account/edit",
+  "accountOrderHistory": "/sales/order/history",
+  "manageNewsletter": "/newsletter/manage",
+  "accountLogoutSuccess" : "/customer/account/logoutSuccess",
+  "accountLogout" : "/customer/account/logout",
+  "wishlist": "/wishlist"
+}
