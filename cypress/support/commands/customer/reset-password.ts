@@ -8,5 +8,7 @@ Cypress.Commands.add('resetPassword', (email) => {
     cy.get(customerSelector.reset_password_form.form).within(() => {
         cy.get(customerSelector.reset_password_form.email).type(email);
         cy.wait(10000);
-    }).submit()
+    }).submit().then(() => {
+        cy.url().should('include', customerRoute.accountLogin)
+    });
 });
