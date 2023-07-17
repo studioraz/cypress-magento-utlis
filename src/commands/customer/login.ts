@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 // @ts-ignore
-import customers from '../../../fixtures/customer/customer.json';
-import customerRoute from '../../../fixtures/customer/route.json';
-import customerSelector from '../../../fixtures/customer/selector.json';
+import customers from '../../../tests/cypress/fixtures/customer.json';
+import customerRoute from '../../../tests/cypress/fixtures/route.json';
+import customerSelector from '../../../tests/cypress/fixtures/selector.json';
 // @ts-ignore
 Cypress.Commands.add('login', (username, password) => {
     // login to customer account

@@ -1,5 +1,5 @@
-const customer = require('../fixtures/customer/customer.json');
-const addresses = require('../fixtures/customer/addresses.json');
+const customer = require('../fixtures/customer.json');
+const addresses = require('../fixtures/addresses.json');
 
 describe('Account activities', () => {
     // @ts-ignore

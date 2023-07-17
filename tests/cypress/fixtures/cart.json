@@ -1,0 +1,23 @@
+{
+  "url": {
+    "product1Url": "/didi-sport-watch.html",
+    "product2Url": "/affirm-water-bottle.html"
+  },
+  "product": {
+    "addToCartButton": "#product-addtocart-button",
+    "messageToast": "div.message-success",
+    "productPrice": ".price"
+  },
+  "cartSummaryTable": ".totals .title",
+  "qtyInputField": ".input-text.qty",
+  "deleteProductButton": ".cart.item .action.action-delete",
+  "emptyCartTextField": ".cart-empty",
+  "coupon_code_1": "H20",
+  "coupon_code_2": "D80",
+  "product_qty" : "7",
+  "messageToast": ".message-error",
+  "product1Price": ".price",
+  "product1Subtotal": ":nth-child(3) > .md\\:justify-end > .sm\\:items-center > .flex > .block > span",
+  "product2Subtotal": ":nth-child(4) > .md\\:justify-end > .sm\\:items-center > .flex > .block > span",
+  "grandTotal": ".py-2 > .w-5\\/12"
+}

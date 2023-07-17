@@ -12,5 +12,6 @@
   "accountLogoutSuccess" : "/customer/account/logoutSuccess",
   "accountLogout" : "/customer/account/logout",
   "wishlist": "/wishlist",
-  "passwordReset": "/customer/account/forgotpassword"
+  "passwordReset": "/customer/account/forgotpassword",
+  "cartUrl": "checkout/cart/"
 }

@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import customerRoute from '../../../fixtures/customer/route.json';
+import customerRoute from '../../../tests/cypress/fixtures/route.json';
 
 
 // @ts-ignore

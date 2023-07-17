@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import customerRoute from '../../../fixtures/customer/route.json';
-import customerSelector from '../../../fixtures/customer/selector.json';
+import customerRoute from '../../../tests/cypress/fixtures/route.json';
+import customerSelector from '../../../tests/cypress/fixtures/selector.json';
 
 Cypress.Commands.add('changePassword', (currentPassword, newPassword) => {
     cy.visit(customerRoute.accountEditChangePassword);

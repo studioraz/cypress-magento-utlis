@@ -35,5 +35,20 @@
     "form" : "form#form-validate",
     "email" : "input[name='email']",
     "captcha" : "input[name='captcha[user_forgotpassword]']"
+  },
+  "add_product_to_cart": {
+    "add_to_cart_btn" : "button#product-addtocart-button",
+    "minicart" : "div#minicart-content-wrapper",
+    "minicart_item" : "div['data-action=scroll']",
+    "message_product_added" : "div[role='alert']"
+  },
+  "checkout_cart" : {
+    "coupon_dropdown_selector": "#block-discount > div[data-role='title']",
+    "coupon_input" : "input[name='coupon_code']",
+    "coupon_message" : "div[role='alert']",
+    "add_delete_coupon_button" : "#block-discount button[type='button']",
+    "cart_form" : "form#form-validate",
+    "cart_product_qty" : "input[data-role='cart-item-qty']",
+    "update_cart" : "button[name='update_cart_action']"
   }
 }
