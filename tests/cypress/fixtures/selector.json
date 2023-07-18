@@ -49,6 +49,10 @@
     "add_delete_coupon_button" : "#block-discount button[type='button']",
     "cart_form" : "form#form-validate",
     "cart_product_qty" : "input[data-role='cart-item-qty']",
-    "update_cart" : "button[name='update_cart_action']"
+    "update_cart" : "button[name='update_cart_action']",
+    "delete_product" : "a[href='#']",
+    "minicart_open" : "div[data-block='minicart']",
+    "modal_delete_product_minicart" : "div[data-role='focusable-scope'] .action-accept",
+    "minicart_product_qty" : "input[type='number']"
   }
 }

@@ -21,8 +21,11 @@ describe('Cart testing', () => {
         cy.get(selectors.checkout_cart.coupon_message).should('be.visible');
     });*/
 
-    it('Add a coupon to the cart', () => {
-        //non existing coupons will not be added
+    /*it('Change product qty in the cart', () => {
         cy.changeQuantity();
+    });*/
+
+    it('Remove product from the cart', () => {
+        cy.removeProduct();
     });
 });
