@@ -17,13 +17,7 @@ describe('Cart testing', () => {
     });
 
     it('Open cart slider by clicking the icon in header', () => {
-        cy.get(selectors.checkout_cart.minicart_open).click().within(() => {
-            cy.get(selectors.add_product_to_cart.minicart).should('be.visible');
-            cy.get(selectors.checkout_cart.delete_product).click();
-        });
-        cy.get(selectors.checkout_cart.modal_delete_product_minicart).click().then(() => {
-            cy.get(selectors.add_product_to_cart.minicart).find(selectors.checkout_cart.minicart_product_qty)
-                .should('not.exist');
-        });
+        cy.openMinicart();
+        cy.minicartRemoveProduct();
     });
 });
