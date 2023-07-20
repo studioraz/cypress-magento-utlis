@@ -1,6 +1,4 @@
 /// <reference types="cypress" />
-
-import route from '../../../tests/cypress/fixtures/route.json';
 import selectors from '../../../tests/cypress/fixtures/selector.json';
 
 Cypress.Commands.add('minicartRemoveProduct', () => {

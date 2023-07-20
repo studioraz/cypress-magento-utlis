@@ -1,4 +1,3 @@
-const customer = require('../fixtures/customer.json');
 const cart = require('../fixtures/cart.json');
 const selectors = require('../fixtures/selector.json');
 

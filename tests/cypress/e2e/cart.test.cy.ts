@@ -1,19 +1,20 @@
-const customer = require('../fixtures/customer.json');
 const cart = require('../fixtures/cart.json');
 const selectors = require('../fixtures/selector.json');
+const route = require('../fixtures/route.json');
 
 describe('Cart testing', () => {
-    before('Add product to cart', () => {
+    beforeEach('Add product to cart', function() {
         cy.visit(cart.url.product1Url);
         cy.get(selectors.add_product_to_cart.add_to_cart_btn).click();
         cy.wait(4000);
         cy.get(selectors.add_product_to_cart.message_product_added).should('be.visible');
     });
 
-    /*it('Add a coupon to the cart', () => {
+    it('Add a coupon to the cart', () => {
         //non existing coupons will not be added
-        cy.addCoupon();
-    });*/
+        cy.visit(route.cartUrl);
+        cy.addCoupon('D80');
+    });
 
     /*it('Remove a discount coupon from the cart', () => {
         cy.addCoupon();
@@ -22,10 +23,12 @@ describe('Cart testing', () => {
     });*/
 
     /*it('Change product qty in the cart', () => {
-        cy.changeQuantity();
+        cy.visit(route.cartUrl);
+        cy.changeQuantity('7');
     });*/
 
-    it('Remove product from the cart', () => {
+    /*it('Remove product from the cart', () => {
+        cy.visit(route.cartUrl);
         cy.removeProduct();
-    });
+    });*/
 });

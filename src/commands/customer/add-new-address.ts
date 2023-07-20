@@ -4,7 +4,6 @@ import customerRoute from '../../../tests/cypress/fixtures/route.json';
 import customerSelector from '../../../tests/cypress/fixtures/selector.json';
 
 Cypress.Commands.add('addNewAddress', (company, phoneNumber, streetAddress, country, region, city, postcode) => {
-    cy.visit(customerRoute.addressNew);
     cy.get(customerSelector.add_new_address_form.form).within(() => {
         cy.get(customerSelector.add_new_address_form.company).type(company);
         cy.get(customerSelector.add_new_address_form.phone_number).type(phoneNumber);
