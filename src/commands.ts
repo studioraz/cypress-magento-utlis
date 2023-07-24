@@ -11,6 +11,8 @@ import './commands/cart/change-products-quantity';
 import './commands/cart/remove-product';
 import './commands/minicart/minicart-remove-product';
 import './commands/minicart/open-minicart';
+import './commands/minicart/minicart-change-qty';
+import './commands/checkout/see-coupon-discount';
 
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from failing the test

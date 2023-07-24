@@ -18,8 +18,8 @@ describe('Cart testing', () => {
 
     /*it('Remove a discount coupon from the cart', () => {
         cy.addCoupon();
-        cy.get(selectors.checkout_cart.add_delete_coupon_button).click();
-        cy.get(selectors.checkout_cart.coupon_message).should('be.visible');
+        cy.get(selectors.cart.delete_coupon_button).click();
+        cy.get(selectors.cart.coupon_message).should('be.visible');
     });*/
 
     /*it('Change product qty in the cart', () => {

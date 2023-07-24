@@ -42,17 +42,36 @@
     "minicart_item" : "div['data-action=scroll']",
     "message_product_added" : "div[role='alert']"
   },
-  "checkout_cart" : {
+  "cart" : {
     "coupon_dropdown_selector": "#block-discount > div[data-role='title']",
     "coupon_input" : "input[name='coupon_code']",
     "coupon_message" : "div[role='alert']",
-    "add_delete_coupon_button" : "#block-discount button[type='button']",
+    "add_coupon_button" : "#block-discount button[type='button']",
     "cart_form" : "form#form-validate",
     "cart_product_qty" : "input[data-role='cart-item-qty']",
     "update_cart" : "button[name='update_cart_action']",
-    "delete_product" : "a[href='#']",
+    "delete_coupon_button" : "#block-discount button[type='button']",
+    "delete_product" : "a[href='#']"
+  },
+  "minicart" : {
     "minicart_open" : "div[data-block='minicart']",
     "modal_delete_product_minicart" : "div[data-role='focusable-scope'] .action-accept",
-    "minicart_product_qty" : "input[type='number']"
+    "minicart_product_qty" : "input[type='number']",
+    "update_product_qty" : "button[title='Update']"
+  },
+  "checkout" : {
+    "cart_discount": ":nth-child(2) > .amount",
+    "company_field": "#shipping-new-address-form [name='company']",
+    "customer_email_field": "#customer-email",
+    "first_name_field": "#shipping-new-address-form [name='firstname']",
+    "last_name_field": "#shipping-new-address-form [name='lastname']",
+    "address_field": "#shipping-new-address-form [name='street[0]']",
+    "post_code_field": "#shipping-new-address-form [name='postcode']",
+    "city_field": "#shipping-new-address-form [name='city']",
+    "country_field": "#shipping-new-address-form [name='country_id']",
+    "region_field": "#shipping-new-address-form [name='region']",
+    "state_field": "",
+    "telephone_field": "#shipping-new-address-form [name='telephone']",
+    "checkout_discount_price": ".totals.discount .price"
   }
 }

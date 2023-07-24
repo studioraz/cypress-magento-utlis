@@ -15,8 +15,13 @@ describe('Cart testing', () => {
         });*/
     });
 
-    it('Open cart slider by clicking the icon in header', () => {
+    /*it('Open cart slider by clicking the icon in header', () => {
         cy.openMinicart();
         cy.minicartRemoveProduct();
+    });*/
+
+    it('Open cart slider by clicking the icon in header', () => {
+        cy.openMinicart();
+        cy.minicartChangeQty('10');
     });
 });

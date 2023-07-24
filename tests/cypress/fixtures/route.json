@@ -13,5 +13,6 @@
   "accountLogout" : "/customer/account/logout",
   "wishlist": "/wishlist",
   "passwordReset": "/customer/account/forgotpassword",
-  "cartUrl": "checkout/cart/"
+  "cartUrl": "checkout/cart/",
+  "checkoutUrl" : "checkout/"
 }
