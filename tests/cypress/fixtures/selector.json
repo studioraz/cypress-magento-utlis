@@ -40,7 +40,9 @@
     "add_to_cart_btn" : "button#product-addtocart-button",
     "minicart" : "div#minicart-content-wrapper",
     "minicart_item" : "div['data-action=scroll']",
-    "message_product_added" : "div[role='alert']"
+    "message_product_added" : "div[role='alert']",
+    "product_price" : "span[id^='product-price-']",
+    "currency" : "$"
   },
   "cart" : {
     "coupon_dropdown_selector": "#block-discount > div[data-role='title']",
@@ -72,6 +74,12 @@
     "region_field": "#shipping-new-address-form [name='region']",
     "state_field": "",
     "telephone_field": "#shipping-new-address-form [name='telephone']",
-    "checkout_discount_price": ".totals.discount .price"
+    "checkout_discount_price": ".totals.discount .price",
+    "price_subtotal" : "span[data-th='Cart Subtotal']",
+    "shipping_price" : "span[data-th='Shipping']",
+    "total_price" : "td[data-th='Order Total'] .price",
+    "shipping_method" : "input[type='radio']",
+    "button_next_step" : "button[data-role='opc-continue']",
+    "button_place_order" : ".checkout[type='submit']"
   }
 }
